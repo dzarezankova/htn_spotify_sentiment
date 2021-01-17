@@ -39,13 +39,15 @@ img {
   z-index: 100;
 }
 .main,
-.mood {
+.mood,
+.suggestion {
   background-position-y: bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .main,
-.mood .container {
+.mood,
+.suggestion .container {
   height: 100vh;
   background-position-y: bottom;
   background-size: 100% auto;
