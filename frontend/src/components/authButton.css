@@ -1,0 +1,16 @@
+.auth Button {
+  background-color: #1db954;
+  padding: 0;
+  border: 0;
+  border-color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.auth :hover {
+  background-color: #27a152;
+}
