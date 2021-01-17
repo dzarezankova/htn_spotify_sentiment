@@ -14,17 +14,17 @@ spotify_api_base_url = "https://api.spotify.com"
 
 # Import urls for our app 
 
-client_side_url = "http://127.0.0.1:5000/"
-redirect_uri = "http://127.0.0.1:5000/spotify_sentiment_analysis"
+client_side_url = "http://localhost:3000/"
+redirect_uri = "http://localhost:3000/spotify_sentiment_analysis"
 scope = 'user-read-private user-read-playback-state user-modify-playback-state user-library-read'
 state = ""
 show_dialogue_bool = True
-SHOW_DIALOG_str = str(SHOW_DIALOG_bool).lower()
+SHOW_DIALOG_str = str(show_dialogue_bool).lower()
 
 auth_query_parameters = {
     "response_type": "code",
-    "redirect_uri": REDIRECT_URI,
-    "scope": SCOPE,
+    "redirect_uri": redirect_uri,
+    "scope": scope,
     "client_id": CLIENT_ID
 }
 
@@ -35,15 +35,11 @@ def spotify():
 @app.route('/spotify_authentication')
 def spotify_auth():
     url_args = "&".join(["{}={}".format(key,urllib.parse.quote(val)) for key, val in auth_query_parameters.items()])
-    auth_url = "{}/?{}".format(SPOTIFY_AUTH_URL, url_args)
+    auth_url = "{}/?{}".format(spotify_auth_url, url_args)
     return redirect(auth_url)
  
 @app.route('/spotify_sentiment_analysis')
 def spotify_sentiment_analysis():
     return render_template('spotify_sentiment_analysis.html')
 
-@app.route('/spotify_sentiment_analysis_test')
-def index():
-    return "Hello, World!"
-    user = 'Listener'
-    return render_template('index.html', user=user)
+
