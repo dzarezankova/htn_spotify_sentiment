@@ -1,6 +1,6 @@
 import React from "react";
 import "./pages.css";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import AuthButton from "../components/authButton";
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
               How are you feeling? According to your{" "}
               <span className="highlight">Spotify</span>
             </p>
-            {/* TODO Make Spotify green */}
           </Col>
         </Row>
         <Row>
@@ -22,7 +21,6 @@ export default function Home() {
             <AuthButton />
           </Col>
         </Row>
-        {/* <Image src="mainWaves.svg" alt="Gradient Waves"></Image> */}
       </Container>
     </div>
   );
