@@ -38,9 +38,26 @@ img {
   bottom: 0px;
   z-index: 100;
 }
-.main {
+.main,
+.mood {
+  background-position-y: bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.main,
+.mood .container {
   height: 100vh;
   background-position-y: bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.col {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
