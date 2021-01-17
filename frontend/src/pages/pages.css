@@ -1,0 +1,46 @@
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 128px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #1db954;
+}
+
+button {
+  width: 330.81px;
+  height: 90px;
+  left: 411px;
+  top: 495px;
+
+  background: #1db954;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  z-index: 200;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  bottom: 0px;
+  z-index: 100;
+}
+.main {
+  height: 100vh;
+  background-position-y: bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
